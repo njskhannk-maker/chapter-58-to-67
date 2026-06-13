@@ -1,0 +1,108 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Assignment</title>
+</head>
+<body>
+
+<div>
+    <h1>DOM</h1>
+
+    <div id="form-content" class="content">
+        <label for="first-name">First Name</label>
+        <input type="text" id="first-name">
+
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name">
+
+        <label for="email">Email</label>
+        <input type="text" id="email">
+    </div>
+
+    <div id="main-content" class="content">
+        <p class="render">First Name : Alex</p>
+        <p class="render" id="lastName">Last Name: Bank</p>
+        <p class="render">Email : alexbank@example.com</p>
+        <p class="render">Country : Pakistan</p>
+        <p class="render">Contact : +92 300 1234567</p>
+    </div>
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html> -->
+
+
+<!-- problem 2 -->
+
+<!-- 
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DOM Assignment</title>
+</head>
+
+<body>
+
+    <div id="main-content">
+        <p id="firstName">First Name: Soha</p>
+        <p id="lastName">Last Name: Khan</p>
+        <p id="email">Email: soha@example.com</p>
+    </div>
+
+    <form id="form-content">
+        <input type="text" value="Soha">
+    </form>
+
+    <script>
+
+        // i. Node type of form-content
+        let formContent = document.getElementById("form-content");
+        document.write("<b>Node Type of form-content:</b> " +
+            formContent.nodeType + "<br><br>");
+
+        // ii. Node type of lastName and its child node
+        let lastName = document.getElementById("lastName");
+        document.write("<b>Node Type of lastName:</b> " +
+            lastName.nodeType + "<br>");
+
+        document.write("<b>Child Node Type of lastName:</b> " +
+            lastName.firstChild.nodeType + "<br><br>");
+
+        // iii. Update child node of lastName
+        lastName.firstChild.nodeValue = "Last Name: Shaikh";
+        document.write("<b>Updated lastName:</b> " +
+            lastName.innerHTML + "<br><br>");
+
+        // iv. First and last child of main-content
+        let mainContent = document.getElementById("main-content");
+
+        document.write("<b>First Child:</b> " +
+            mainContent.firstElementChild.innerHTML + "<br>");
+
+        document.write("<b>Last Child:</b> " +
+            mainContent.lastElementChild.innerHTML + "<br><br>");
+
+        // v. Next and Previous siblings of lastName
+        document.write("<b>Previous Sibling:</b> " +
+            lastName.previousElementSibling.innerHTML + "<br>");
+
+        document.write("<b>Next Sibling:</b> " +
+            lastName.nextElementSibling.innerHTML + "<br><br>");
+
+        // vi. Parent node and node type of email
+        let email = document.getElementById("email");
+
+        document.write("<b>Parent Node:</b> " +
+            email.parentNode.id + "<br>");
+
+        document.write("<b>Parent Node Type:</b> " +
+            email.parentNode.nodeType);
+
+    </script>
+
+</body>
+
+</html> -->
